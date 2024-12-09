@@ -13,7 +13,7 @@ struct MainImage: View {
         ZStack {
             Image("MotherBoard")
                 .resizable()
-                .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.4)
+                .frame(width: UIScreen.main.bounds.width * 0.6, height: UIScreen.main.bounds.height * 0.35)
 
             Image("FreeSend")
                 .resizable()
