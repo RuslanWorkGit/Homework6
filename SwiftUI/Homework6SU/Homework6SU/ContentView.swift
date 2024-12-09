@@ -11,11 +11,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             MainImage()
-            TabView()
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+      
+            PageControl(totalPage: 5, currentPage: 0)
+            
+            
+
             
         }
         .padding()
