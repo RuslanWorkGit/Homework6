@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     
     @IBOutlet weak var deliveryLabel: UILabel!
+    
     @IBOutlet weak var timeDeliveryLabel: UILabel!
     
     @IBOutlet weak var creditBuyButton: UIButton!
@@ -39,7 +40,13 @@ class ViewController: UIViewController {
         productCodeLabel.text = "Код 218525893"
         
         priceLabel.text = "8 703 $"
-        deliveryLabel.text = "Самовивіз з наших магазинів - "
+        
+
+        let freeDelivery = UILabel()
+        freeDelivery.text = "БЕЗКОШТОВНО"
+        freeDelivery.textColor = .systemGreen
+        deliveryLabel.text = "Самовивіз з наших магазинів - \(freeDelivery.text!)"
+        
         timeDeliveryLabel.text = "Забирати завтра з 12:00"
         
         let atributeTitle = NSAttributedString(

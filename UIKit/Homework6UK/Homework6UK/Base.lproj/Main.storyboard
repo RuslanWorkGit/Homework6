@@ -109,7 +109,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM6-ak-N5O">
                                                 <rect key="frame" x="0.0" y="42.666666666666686" width="361" height="42.666666666666657"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -193,7 +193,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="0.34449404761904762" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="7BR-C3-KEd" firstAttribute="leading" secondItem="RK4-L2-qcs" secondAttribute="leading" id="9vX-do-1d5"/>
                                     <constraint firstItem="Oao-RS-U9Q" firstAttribute="top" secondItem="RK4-L2-qcs" secondAttribute="top" id="CDw-lC-BWQ"/>
