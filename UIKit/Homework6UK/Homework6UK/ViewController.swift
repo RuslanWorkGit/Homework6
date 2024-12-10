@@ -26,6 +26,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var heartButton: UIButton!
     @IBOutlet weak var buyNowButton: UIButton!
     
+    @IBOutlet weak var firstStar: UIButton!
+    @IBOutlet weak var secondStar: UIButton!
+    @IBOutlet weak var thirdStar: UIButton!
+    @IBOutlet weak var fourthStar: UIButton!
+    @IBOutlet weak var fifthStar: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -80,6 +87,22 @@ class ViewController: UIViewController {
         buyNowButton.setAttributedTitle(buyNowTitle, for: .normal)
         buyNowButton.backgroundColor = .systemGreen
         buyNowButton.layer.cornerRadius = 10
+        
+        firstStar.setImage(UIImage(systemName: "star"), for: .normal)
+        firstStar.setTitle("", for: .normal)
+        firstStar.tintColor = .systemGray
+        secondStar.setImage(UIImage(systemName: "star"), for: .normal)
+        secondStar.setTitle("", for: .normal)
+        secondStar.tintColor = .systemGray
+        thirdStar.setImage(UIImage(systemName: "star"), for: .normal)
+        thirdStar.setTitle("", for: .normal)
+        thirdStar.tintColor = .systemGray
+        fourthStar.setImage(UIImage(systemName: "star"), for: .normal)
+        fourthStar.setTitle("", for: .normal)
+        fourthStar.tintColor = .systemGray
+        fifthStar.setImage(UIImage(systemName: "star"), for: .normal)
+        fifthStar.setTitle("", for: .normal)
+        fifthStar.tintColor = .systemGray
     }
 
     @IBAction func creditBuyActionButton(_ sender: Any) {

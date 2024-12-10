@@ -55,10 +55,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-8C-BzB" userLabel="MainInfo">
-                                <rect key="frame" x="16" y="423" width="361" height="48.666666666666686"/>
+                                <rect key="frame" x="16" y="423" width="361" height="68.666666666666686"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="POl-kF-yDr">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="48.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="68.666666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThP-6G-v48">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="26.333333333333332"/>
@@ -67,14 +67,44 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYs-Vo-LtE">
-                                                <rect key="frame" x="0.0" y="34.333333333333314" width="361" height="14.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="34.333333333333314" width="361" height="34.333333333333343"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rb-c4-sSV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="14.333333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="34.333333333333336"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" systemColor="systemGray2Color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <stackView opaque="NO" contentMode="right" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="etn-HD-24g">
+                                                        <rect key="frame" x="66" y="0.0" width="295" height="34.333333333333336"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INQ-Br-GQA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUl-KM-S2x">
+                                                                <rect key="frame" x="55" y="0.0" width="75" height="34.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-I8-r7B">
+                                                                <rect key="frame" x="110" y="0.0" width="75" height="34.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zo-BU-4Pw">
+                                                                <rect key="frame" x="165" y="0.0" width="75" height="34.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQr-Ll-SPm">
+                                                                <rect key="frame" x="220" y="0.0" width="75" height="34.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -89,14 +119,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYE-He-yx0" userLabel="LineOne">
-                                <rect key="frame" x="0.0" y="479.66666666666669" width="393" height="1"/>
+                                <rect key="frame" x="0.0" y="499.66666666666669" width="393" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="8tX-Gi-VRF"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzr-2F-iYp" userLabel="PriceInfo">
-                                <rect key="frame" x="16" y="488.66666666666674" width="361" height="128"/>
+                                <rect key="frame" x="16" y="508.66666666666674" width="361" height="128"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="J0y-AR-sEG">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="128"/>
@@ -131,14 +161,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAN-fP-tl7" userLabel="LineTwo">
-                                <rect key="frame" x="0.0" y="624.66666666666663" width="393" height="1"/>
+                                <rect key="frame" x="0.0" y="644.66666666666663" width="393" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="qnm-eL-Ghp"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQL-t6-KHD" userLabel="CreditBuy">
-                                <rect key="frame" x="16" y="633.66666666666663" width="361" height="70"/>
+                                <rect key="frame" x="16" y="653.66666666666663" width="361" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3T-Vi-97M">
                                         <rect key="frame" x="0.0" y="5" width="361" height="60"/>
@@ -158,20 +188,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eup-Aw-L77" userLabel="LineThree">
-                                <rect key="frame" x="0.0" y="711.66666666666663" width="393" height="1"/>
+                                <rect key="frame" x="0.0" y="731.66666666666663" width="393" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="E51-YW-z2F"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RK4-L2-qcs" userLabel="FutterButton">
-                                <rect key="frame" x="16" y="720.66666666666663" width="361" height="97.333333333333371"/>
+                                <rect key="frame" x="16" y="740.66666666666663" width="361" height="77.333333333333371"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7BR-C3-KEd">
-                                        <rect key="frame" x="0.0" y="8" width="180.66666666666666" height="81.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="8.0000000000000036" width="180.66666666666666" height="61.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-Tv-2SI">
-                                                <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="81.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="61.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -179,7 +209,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6g-CI-J82">
-                                                <rect key="frame" x="60.333333333333329" y="0.0" width="60" height="81.333333333333329"/>
+                                                <rect key="frame" x="60.333333333333329" y="0.0" width="60" height="61.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -187,7 +217,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXj-zF-nlS">
-                                                <rect key="frame" x="120.33333333333333" y="0.0" width="60.333333333333329" height="81.333333333333329"/>
+                                                <rect key="frame" x="120.33333333333333" y="0.0" width="60.333333333333329" height="61.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -197,7 +227,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oao-RS-U9Q">
-                                        <rect key="frame" x="216.66666666666663" y="0.0" width="144.33333333333337" height="97.333333333333329"/>
+                                        <rect key="frame" x="216.66666666666663" y="0.0" width="144.33333333333337" height="77.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
@@ -258,11 +288,16 @@
                         <outlet property="creditBuyButton" destination="X3T-Vi-97M" id="9Ii-MS-Gx6"/>
                         <outlet property="deliveryLabel" destination="bM6-ak-N5O" id="TAE-oB-fda"/>
                         <outlet property="dicountImage" destination="Cxu-qY-sVL" id="wnI-P1-6eW"/>
+                        <outlet property="fifthStar" destination="HQr-Ll-SPm" id="ozO-Nl-Srf"/>
+                        <outlet property="firstStar" destination="INQ-Br-GQA" id="ysa-ge-AOa"/>
+                        <outlet property="fourthStar" destination="9zo-BU-4Pw" id="kUz-Vp-tZF"/>
                         <outlet property="heartButton" destination="VXj-zF-nlS" id="jko-5b-k5G"/>
                         <outlet property="mainImage" destination="eYI-Um-L9G" id="6k1-fh-NtW"/>
                         <outlet property="priceLabel" destination="v8T-LU-7OE" id="gZ4-b8-wTl"/>
                         <outlet property="productCodeLabel" destination="1Rb-c4-sSV" id="HKT-TO-bb2"/>
                         <outlet property="productNameLabel" destination="ThP-6G-v48" id="Ehq-mm-qCb"/>
+                        <outlet property="secondStar" destination="XUl-KM-S2x" id="5bK-MK-G3R"/>
+                        <outlet property="thirdStar" destination="ghC-I8-r7B" id="U52-Br-zar"/>
                         <outlet property="timeDeliveryLabel" destination="giE-N0-j3c" id="y5X-oN-DWd"/>
                     </connections>
                 </viewController>
