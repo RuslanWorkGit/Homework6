@@ -14,10 +14,13 @@ struct PageControl: View {
     var body: some View {
         HStack {
             ForEach(0..<totalPage, id: \.self) { index in
-                Circle()
-                    .frame(width: 10, height: 10)
-                    .foregroundColor(index == currentPage ? .green : .gray)
-                
+                Button {
+                    currentPage = index
+                } label: {
+                    Circle()
+                        .frame(width: 10, height: 10)
+                        .foregroundColor(index == currentPage ? .green : .gray)
+                }
             }
         }
     }
