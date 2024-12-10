@@ -88,21 +88,42 @@ class ViewController: UIViewController {
         buyNowButton.backgroundColor = .systemGreen
         buyNowButton.layer.cornerRadius = 10
         
-        firstStar.setImage(UIImage(systemName: "star"), for: .normal)
-        firstStar.setTitle("", for: .normal)
-        firstStar.tintColor = .systemGray
-        secondStar.setImage(UIImage(systemName: "star"), for: .normal)
-        secondStar.setTitle("", for: .normal)
-        secondStar.tintColor = .systemGray
-        thirdStar.setImage(UIImage(systemName: "star"), for: .normal)
-        thirdStar.setTitle("", for: .normal)
-        thirdStar.tintColor = .systemGray
-        fourthStar.setImage(UIImage(systemName: "star"), for: .normal)
-        fourthStar.setTitle("", for: .normal)
-        fourthStar.tintColor = .systemGray
-        fifthStar.setImage(UIImage(systemName: "star"), for: .normal)
-        fifthStar.setTitle("", for: .normal)
-        fifthStar.tintColor = .systemGray
+//        firstStar.setImage(UIImage(systemName: "star"), for: .normal)
+//        firstStar.setTitle("", for: .normal)
+//        firstStar.tintColor = .systemGray
+//        secondStar.setImage(UIImage(systemName: "star"), for: .normal)
+//        secondStar.setTitle("", for: .normal)
+//        secondStar.tintColor = .systemGray
+//        thirdStar.setImage(UIImage(systemName: "star"), for: .normal)
+//        thirdStar.setTitle("", for: .normal)
+//        thirdStar.tintColor = .systemGray
+//        fourthStar.setImage(UIImage(systemName: "star"), for: .normal)
+//        fourthStar.setTitle("", for: .normal)
+//        fourthStar.tintColor = .systemGray
+//        fifthStar.setImage(UIImage(systemName: "star"), for: .normal)
+//        fifthStar.setTitle("", for: .normal)
+//        fifthStar.tintColor = .systemGray
+        
+        resetStars()
+    }
+    
+    func updateStars(rating: Int) {
+        let stars = [firstStar, secondStar, thirdStar, fourthStar, fifthStar]
+        
+        for (index, star) in stars.enumerated() {
+            if index < rating {
+                star?.setImage(UIImage(systemName: "star.fill"), for: .normal)
+                star?.tintColor = .systemYellow
+            } else {
+                star?.setImage(UIImage(systemName: "star"), for: .normal) // Порожня зірка
+                star?.setTitle("", for: .normal)
+                star?.tintColor = .systemGray
+            }
+        }
+    }
+    
+    func resetStars() {
+        updateStars(rating: 0)
     }
 
     @IBAction func creditBuyActionButton(_ sender: Any) {
@@ -120,6 +141,24 @@ class ViewController: UIViewController {
     }
     @IBAction func buyNowButtonAction(_ sender: Any) {
         print("Button buy now pressed" )
+    }
+    
+    
+    
+    @IBAction func firstStarAction(_ sender: Any) {
+        updateStars(rating: 1)
+    }
+    @IBAction func secondStarAction(_ sender: Any) {
+        updateStars(rating: 2)
+    }
+    @IBAction func thirdStarAction(_ sender: Any) {
+        updateStars(rating: 3)
+    }
+    @IBAction func fourthStarAction(_ sender: Any) {
+        updateStars(rating: 4)
+    }
+    @IBAction func fifthStarAction(_ sender: Any) {
+        updateStars(rating: 5)
     }
 }
 
