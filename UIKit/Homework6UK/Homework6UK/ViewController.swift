@@ -16,9 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var productCodeLabel: UILabel!
     
     @IBOutlet weak var priceLabel: UILabel!
-    
     @IBOutlet weak var deliveryLabel: UILabel!
-    
     @IBOutlet weak var timeDeliveryLabel: UILabel!
     
     @IBOutlet weak var creditBuyButton: UIButton!
@@ -88,5 +86,17 @@ class ViewController: UIViewController {
         print("Button creddit buy pressed" )
     }
     
+    @IBAction func compareButtonAction(_ sender: Any) {
+        print("Button compare pressed" )
+    }
+    @IBAction func buyButtonAction(_ sender: Any) {
+        print("Button buy pressed" )
+    }
+    @IBAction func likeButtonAction(_ sender: Any) {
+        print("Button like pressed" )
+    }
+    @IBAction func buyNowButtonAction(_ sender: Any) {
+        print("Button buy now pressed" )
+    }
 }
 
